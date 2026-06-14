@@ -1,0 +1,463 @@
+{
+  "assets": {
+    "model": "models/VR01302.glb",
+    "gemEnv": "hdr/env-gem-001.exr",
+    "sceneEnv": "hdr/env-metal-001.hdr",
+    "draco": "./draco/",
+    "bakedShadow": "maps/shadowMap.png"
+  },
+  "camera": {
+    "type": "Perspective",
+    "fov": 20,
+    "dollyFov": true,
+    "orthographicSize": 5,
+    "near": 0.1,
+    "far": 1000,
+    "position": {
+      "x": -6.516989304074583,
+      "y": 5.363672224847271,
+      "z": -7.763412662670361
+    },
+    "rotation": {
+      "x": -2.2433979833374895,
+      "y": 0.6109225329896633,
+      "z": 2.5174496135429525
+    }
+  },
+  "renderer": {
+    "antialias": true,
+    "physicallyCorrectLights": true,
+    "outputEncoding": "sRGB",
+    "toneMapping": "ACESFilmic",
+    "toneMappingExposure": 1,
+    "shadowMapType": "PCFSoftShadowMap",
+    "pixelRatio": 3
+  },
+  "environment": {
+    "visible": true,
+    "intensity": 0.4,
+    "rotation": 0
+  },
+  "microAnimation": {
+    "visible": false,
+    "speed": 0.0366
+  },
+  "background": {
+    "visible": true,
+    "color": "#ffffff",
+    "blurriness": 1,
+    "intensity": 10,
+    "rotation": 0
+  },
+  "ring": {
+    "visible": true,
+    "castShadow": true,
+    "receiveShadow": false,
+    "scale": 1,
+    "position": {
+      "x": 0,
+      "y": 1.5,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "animate": false,
+    "animateSpeed": 0.24,
+    "fixedEnv": true,
+    "exposure": 1,
+    "saturation": 1,
+    "contrast": 1,
+    "vibrance": 0,
+    "hue": 0,
+    "positionPreset": "position1",
+    "presets": {
+      "position1": {
+        "position": {
+          "x": 0,
+          "y": 1.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+      "position2": {
+        "position": {
+          "x": 0,
+          "y": 0.6,
+          "z": 0
+        },
+        "rotation": {
+          "x": -1.479,
+          "y": 0,
+          "z": -0.317
+        }
+      }
+    }
+  },
+  "diamond": {
+    "visible": true,
+    "castShadow": true,
+    "receiveShadow": false,
+    "cut": "oval",
+    "wireframe": false,
+    "color": "#fffbfa",
+    "bounces": 4,
+    "ior": 2.4,
+    "aberrationStrength": 0.5,
+    "fastChroma": false,
+    "cutDepth": 0,
+    "transmission": 1,
+    "reflectivity": 0.1,
+    "gamma": 1.08,
+    "lightOriented": true,
+    "facetContrast": 0.85,
+    "facetContrastColor": "#000000",
+    "rgbBoost": {
+      "r": 0.89,
+      "g": 0.89,
+      "b": 0.99
+    },
+    "envIntensity": 1,
+    "envRotation": 0.266,
+    "envRotationX": 0.027,
+    "envRotationY": 0,
+    "envRotationZ": 0,
+    "fixedEnv": true,
+    "exposure": 1.2,
+    "saturation": 1.13,
+    "contrast": 1.1,
+    "vibrance": 0.08,
+    "hue": 0
+  },
+  "cuts": {
+    "round": {
+      "ior": 2.42,
+      "bounces": 5,
+      "aberrationStrength": 0.02,
+      "squareness": 0,
+      "cutDepth": 0.1,
+      "envIntensity": 1
+    },
+    "cushion": {
+      "ior": 2.4,
+      "bounces": 5,
+      "aberrationStrength": 0.02,
+      "squareness": 0.8,
+      "cutDepth": 0.1,
+      "envIntensity": 1
+    },
+    "princess": {
+      "ior": 2.42,
+      "bounces": 5,
+      "aberrationStrength": 0.02,
+      "squareness": 1,
+      "cutDepth": 0.1,
+      "envIntensity": 1
+    },
+    "oval": {
+      "ior": 2.42,
+      "bounces": 5,
+      "aberrationStrength": 0.02,
+      "squareness": 0.2,
+      "cutDepth": 0.1,
+      "envIntensity": 1
+    },
+    "emerald": {
+      "ior": 2.4,
+      "bounces": 4,
+      "aberrationStrength": 0.01,
+      "squareness": 0.9,
+      "cutDepth": 0.1,
+      "envIntensity": 1
+    },
+    "pear": {
+      "ior": 2.41,
+      "bounces": 5,
+      "aberrationStrength": 0.02,
+      "squareness": 0.1,
+      "cutDepth": 0.1,
+      "envIntensity": 1
+    }
+  },
+  "metal": {
+    "visible": true,
+    "hdr": "",
+    "color": "#ffd675",
+    "metalness": 1,
+    "roughness": 0.06,
+    "envMapIntensity": 0.4,
+    "envRotation": 0.2802052972806317,
+    "envRotationX": 0.765,
+    "envRotationY": 0,
+    "envRotationZ": 0,
+    "fixedEnv": true,
+    "clearcoat": 1,
+    "clearcoatRoughness": 1,
+    "transmission": 0,
+    "thickness": 0,
+    "ior": 2.33,
+    "exposure": 1,
+    "saturation": 1.1,
+    "contrast": 1,
+    "vibrance": 0,
+    "hue": 0
+  },
+  "ground": {
+    "visible": true,
+    "receiveShadow": true,
+    "color": "#d6d6d6",
+    "realtimeShadowOpacity": 0.5,
+    "realtimeShadowColor": "#000000",
+    "bakedShadow": true,
+    "bakedShadowOpacity": 1,
+    "bakedShadowSize": 5,
+    "bakedShadowColor": "#000000",
+    "bakedShadowExposure": 1,
+    "bakedShadowContrast": 1,
+    "size": 20,
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1,
+    "transparent": false,
+    "clearcoat": 1,
+    "clearcoatRoughness": 1,
+    "transmission": 0.04,
+    "thickness": 0,
+    "ior": 1,
+    "sheen": 0,
+    "sheenRoughness": 0,
+    "sheenColor": "#ffffff",
+    "iridescence": 0,
+    "iridescenceIOR": 1.3,
+    "iridescenceMin": 100,
+    "iridescenceMax": 400,
+    "envMapIntensity": 0.915
+  },
+  "contactShadow": {
+    "visible": true,
+    "blur": 4.4,
+    "darkness": 5,
+    "opacity": 0.58,
+    "shadowColor": "#ffdd00",
+    "matchMetal": false,
+    "planeSize": 5,
+    "cameraHeight": 1.5
+  },
+  "contactShadow2": {
+    "visible": true,
+    "blur": 2.5,
+    "darkness": 1.8,
+    "opacity": 0.65,
+    "shadowColor": "#000000",
+    "matchMetal": false,
+    "planeSize": 5,
+    "cameraHeight": 0.35
+  },
+  "controls": {
+    "enableDamping": true,
+    "enablePan": true,
+    "minDistance": 0.1,
+    "minPolarAngle": 0,
+    "maxPolarAngle": 1.5708,
+    "target": {
+      "x": -0.19425697274941056,
+      "y": 1.4508085332807528,
+      "z": 0.021441842527632538
+    }
+  },
+  "hemisphereLight": {
+    "visible": false,
+    "showHelper": false,
+    "skyColor": "#0011ff",
+    "groundColor": "#ff0000",
+    "intensity": 10
+  },
+  "dirlight": {
+    "visible": true,
+    "showHelper": false,
+    "color": "#ffffff",
+    "intensity": 10,
+    "castShadow": true,
+    "position": {
+      "x": -3,
+      "y": 7,
+      "z": -5
+    },
+    "target": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "shadow": {
+      "mapSize": 4096,
+      "bias": 0.01,
+      "radius": 15.9,
+      "camera": {
+        "near": 0.1,
+        "far": 20,
+        "top": 5,
+        "bottom": -5,
+        "left": -5,
+        "right": 5
+      }
+    }
+  },
+  "spotLight": {
+    "visible": false,
+    "castShadow": false,
+    "showHelper": false,
+    "color": "#ffffff",
+    "intensity": 100,
+    "distance": 16,
+    "decay": 0,
+    "angle": 0.5,
+    "penumbra": 1,
+    "position": {
+      "x": -2,
+      "y": 9,
+      "z": -5
+    },
+    "target": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "shadow": {
+      "mapSize": 2048,
+      "bias": -0.0005,
+      "radius": 2,
+      "cameraNear": 0.5,
+      "cameraFar": 10,
+      "cameraFov": 15
+    }
+  },
+  "rectLight": {
+    "visible": false,
+    "showHelper": false,
+    "color": "#ffffff",
+    "intensity": 2,
+    "width": 5,
+    "height": 5,
+    "position": {
+      "x": 0,
+      "y": 3.5,
+      "z": -3
+    },
+    "rotation": {
+      "x": 0.5,
+      "y": -3.14,
+      "z": 0
+    }
+  },
+  "cubeCamera": {
+    "near": 0.1,
+    "far": 100,
+    "size": 256
+  },
+  "postProcessing": {
+    "ssr": {
+      "visible": true,
+      "useGroundReflection": false,
+      "reflectorColor": "#888888",
+      "color": "#000000",
+      "distanceAttenuation": true,
+      "fresnel": true,
+      "thickness": 0.018,
+      "maxDistance": 10,
+      "opacity": 1,
+      "blur": true,
+      "resolutionScale": 1,
+      "infiniteThick": false,
+      "bouncing": false,
+      "intensity": 1,
+      "rgbBoost": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "onDiamond": false
+    },
+    "bloom": {
+      "visible": true,
+      "diamond": {
+        "visible": true,
+        "strength": 0.0079,
+        "radius": 0,
+        "threshold": 1,
+        "color": "#ffffff"
+      },
+      "metal": {
+        "visible": true,
+        "strength": 0.099,
+        "radius": 0,
+        "threshold": 5,
+        "color": "#242424"
+      }
+    },
+    "sao": {
+      "visible": true,
+      "inbetweenObjects": false,
+      "isolated": {
+        "output": 0,
+        "bias": 0.5,
+        "intensity": 0.05,
+        "kernelRadius": 8
+      },
+      "inbetween": {
+        "output": 0,
+        "bias": 0.5,
+        "intensity": 0.0025,
+        "kernelRadius": 20
+      },
+      "blur": true,
+      "blurRadius": 8,
+      "blurStdDev": 4,
+      "blurDepthCutoff": 0.01
+    },
+    "ssao": {
+      "visible": false,
+      "kernelSize": 32,
+      "radius": 0.05,
+      "minDistance": 0,
+      "maxDistance": 0.001
+    },
+    "dof": {
+      "visible": false,
+      "focus": 30.9,
+      "aperture": 0.0236,
+      "maxblur": 0.003
+    },
+    "vignette": {
+      "visible": false,
+      "offset": 1.79,
+      "darkness": 0.66
+    },
+    "lens": {
+      "visible": false,
+      "chromaticAberration": 0.0005
+    },
+    "antialiasing": {
+      "type": "SMAA",
+      "visible": true,
+      "taa": {
+        "sampleLevel": 1
+      }
+    },
+    "colorCorrection": {
+      "visible": true,
+      "saturation": 1,
+      "contrast": 1
+    }
+  }
+}
